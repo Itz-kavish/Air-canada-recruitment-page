@@ -1,3 +1,33 @@
-.body {
-  background-color: red;
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  grid-template-rows: 6% 12% 6% 38% 38%;
+  margin: -0.4%;
+  height: 100vw;
+}
+
+#grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+#item-1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+#item-2 {
+  grid-column: 1/5;
+}
+#item-3 {
+  grid-column: 1/5;
+}
+#item-4 {
+  grid-column: 1/5;
+}
+#item-5 {
+  grid-column: 1/5;
 }

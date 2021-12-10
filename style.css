@@ -1,33 +1,46 @@
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
   background-color: #2196f3;
-  padding: 10px;
-  grid-template-rows: 6% 12% 6% 38% 38%;
+  /* padding: 10px; */
+  grid-template-rows: 5% 10% 5% 40% 40%;
   margin: -0.4%;
   height: 100vw;
 }
 
 #grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
   font-size: 30px;
 }
-#item-1 {
+#topHeader {
   grid-column: 1/5;
   grid-row: 1/2;
+  background-color: black;
+  width: 100%;
 }
-#item-2 {
+#middleHeader {
+  display: flex;
+  background-color: #c4c4c4;
+  grid-column: 1/5;
+  text-align: center;
+}
+#bottomHeader {
+  background-color: #d82f2e;
+  width: 100%;
   grid-column: 1/5;
 }
-#item-3 {
-  grid-column: 1/5;
+
+#slogan {
+  text-align: center;
+  vertical-align: middle;
 }
+
 #item-4 {
   grid-column: 1/5;
 }
 #item-5 {
   grid-column: 1/5;
+}
+
+#air-canada {
+  width: 25%;
 }

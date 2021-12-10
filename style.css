@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "lucida_sans_unicoderegular";
+  src: url("l_10646-webfont.woff2") format("woff2"),
+    url("l_10646-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "lucida_sans_unicoderegular";
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -27,6 +39,11 @@
   background-color: #d82f2e;
   width: 100%;
   grid-column: 1/5;
+  font-family: "lucida_sans_unicoderegular";
+  font-style: italic;
+  font-weight: 550;
+  letter-spacing: 0.2rem;
+  color: white;
 }
 
 #slogan {

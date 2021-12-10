@@ -1,7 +1,7 @@
 @font-face {
   font-family: "lucida_sans_unicoderegular";
-  src: url("l_10646-webfont.woff2") format("woff2"),
-    url("l_10646-webfont.woff") format("woff");
+  src: url("fonts/l_10646-webfont.woff2") format("woff2"),
+    url("fonts/l_10646-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

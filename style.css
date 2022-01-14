@@ -12,14 +12,13 @@ body {
   font-family: "lucida_sans_unicoderegular";
   padding: 0;
   margin: 0;
+  background-color: #e1fffa;
 }
 
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: #e1fffa;
-  grid-template-rows: 5% 10% 5% 40% 40%;
-  height: 100vw;
+  grid-template-rows: 5vw 10vw 5vw 30vw 30vw;
   width: 100vw;
   max-width: 100%;
 }
@@ -30,7 +29,7 @@ body {
   background-color: black;
 }
 
-#middleHeader {
+#middleHeader { 
   display: flex;
   background-color: #c4c4c4;
   grid-column: 1/6;
@@ -77,7 +76,6 @@ body {
 
 #bottomHeader {
   background-color: #d82f2e;
-  /* width: 100%; */
   grid-column: 1/6;
   font-style: italic;
   font-weight: 550;
@@ -98,7 +96,6 @@ body {
 }
 #reviews {
   grid-column: 1/4;
-  /* width: 90%; */
 }
 
 #air-canada {
@@ -206,4 +203,13 @@ a:active#aboutButton {
   box-shadow: 0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.25),
     inset 0.5vw 0.7vw 0.2vw rgba(0, 0, 0, 0.25);
   border-radius: 4vw;
+}
+
+#feedback{
+  grid-column: 4/6;
+  border: solid 5px black;
+}
+
+#reviews{
+  border: solid 5px black;
 }

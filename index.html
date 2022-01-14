@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Canada Recruitment Webpage</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/5bdf476ed1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" >
   </head>
   <body>
     <div id="grid-container">
       <div id="topHeader"></div>
       <div id="middleHeader">
         <img id="air-canada" src="Air_Canada_Logo.svg" alt="Air Canada logo" />
+        <div class="buttons">
+          <div class="theme">
+            <button id="themeBtn">Theme</button>
+          </div>
+          <div class="toggleMode">
+            <i class="fas fa-toggle-on"></i>
+          </div>
+          <div class="youtube">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="twitter">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="instagram">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
       </div>
       <div id="bottomHeader">
         <p id="slogan">Fly With Us! YOUR WORLD AWAITS!</p>
         <div id="about">
-          About
+          <a id = "aboutButton" href="about.html">About</a>
         </div>
       </div>
       <div id="reviews">4</div>
-      <div id="item-5">5</div>
+      <div id="likeCounter">
+        <p class="heading">LIKE THE PAGE?</p>
+        <span class="number">0</span>
+        <div class="counterButtons">
+          <button class="btn increase"><i class="far fa-thumbs-down"></i></button>
+          <button class="btn reset">RESET</button>
+        <button class="btn decrease"><i class="far fa-thumbs-up"></i></button>
+        </div>
+      </div>
       <!-- <div id="item-6">6</div>
       <div id="item-7">7</div>
       <div id="item-8">8</div> -->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

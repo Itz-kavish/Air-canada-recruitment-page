@@ -29,7 +29,7 @@ body {
   background-color: black;
 }
 
-#middleHeader { 
+#middleHeader {
   display: flex;
   background-color: #c4c4c4;
   grid-column: 1/6;
@@ -205,11 +205,23 @@ a:active#aboutButton {
   border-radius: 4vw;
 }
 
-#feedback{
+#feedback {
+  display: flex;
   grid-column: 4/6;
   border: solid 5px black;
+  justify-content: center;
 }
 
-#reviews{
+img.customer-service {
+  align-self: center;
+  width: 60%;
+  background: #c4c4c4;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+}
+
+#reviews {
   border: solid 5px black;
 }

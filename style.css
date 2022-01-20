@@ -13,12 +13,13 @@ body {
   padding: 0;
   margin: 0;
   background-color: #e1fffa;
+  letter-spacing: 0.2vw;
 }
 
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5vw 10vw 5vw 30vw 30vw;
+  grid-template-rows: 5vw 10vw 5vw 26vw 34vw;
   width: 100vw;
   max-width: 100%;
 }
@@ -206,22 +207,53 @@ a:active#aboutButton {
 }
 
 #feedback {
-  display: flex;
   grid-column: 4/6;
   border: solid 5px black;
-  justify-content: center;
+  text-align: center;
+}
+
+.csimage {
+  margin: auto;
+  margin-top: 10%;
 }
 
 img.customer-service {
-  align-self: center;
   width: 60%;
-  background: #c4c4c4;
-  border: 1px solid #000000;
+  border-top: 1.8vw solid #d82f2e;
+  border-bottom: 1.8vw solid #d82f2e;
+  border-right: 1vw solid rgba(0, 0, 0, 0.9);
+  border-left: 1vw solid rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
   border-radius: 22px;
+}
+
+#questions {
+  font-size: 2vw;
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+
+#contactUs {
+  font-size: 1.5vw;
+  line-height: 1vw;
+  margin-top: 0%;
+}
+
+.contactBtns {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3vw;
+  color: #d82f2e;
+}
+
+.buttonTitle {
+  display: flex;
+  justify-content: space-around;
 }
 
 #reviews {
   border: solid 5px black;
+  grid-row: 4/6;
 }

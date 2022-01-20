@@ -28,3 +28,56 @@ const reviews = [
     text: "There were 2 dogs outside and there were 3 cats. The dogs were actually dogs and the cats were dogs. The company I work at is pretty hotdog. The people that worked there were experts at everything. They knew how to read, write and listen. THEY LISTENED WITH THEIR EARS AND SPOKE WITH THEIR MOUTH. It is pretty amazing for me to speak eith your mouth and listen with your ears becasue there are trillions of stars in the sky and the earth is not flat but I think its donut shaped. ",
   },
 ];
+const img = document.getElementById("person-img");
+const author = document.getElementById("author");
+const job = document.getElementById("job");
+const info = document.getElementById("info");
+
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+const randomBtn = document.querySelector(".random-btn");
+
+//Function for generating random number that equal the length of the array 'reviews'
+function generateRandomNum() {
+  return Math.floor(Math.random() * reviews.length);
+}
+
+//Value for starting item
+let currentItem = 1;
+
+//Function for the Previous button that makes the reviews cycle backwards
+prevBtn.addEventListener("click", function () {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson(currentItem);
+});
+
+//Function for the Next Button that makes the reviews cycle forward
+nextBtn.addEventListener("click", function () {
+  currentItem++;
+  if (currentItem > 3) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+});
+
+randomBtn.addEventListener("click", function () {
+  currentItem = generateRandomNum();
+  showPerson(currentItem);
+});
+
+//load the first item
+window.addEventListener("DOMContentLoaded", function () {
+  showPerson(currentItem);
+});
+
+//Show person based on item
+function showPerson(person) {
+  const item = reviews[person];
+  img.src = item.img;
+  author.innerHTML = item.name;
+  job.innerHTML = item.job;
+  info.innerHTML = item.text;
+}

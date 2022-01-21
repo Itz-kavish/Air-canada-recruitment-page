@@ -8,11 +8,23 @@
 
 @import url("/fonts/fontawesome-free-5.3.1-web/css/all.css");
 
+:root {
+  --red: #d82f2e;
+  --black: black;
+  --grey: #c4c4c4;
+  --blue: #e1fffa;
+  --white: white;
+  --green: #209e1e;
+  --light-red: #e5625e;
+  --off-white: #f5dddd;
+  --teal: #1d9c85;
+}
+
 body {
   font-family: "lucida_sans_unicoderegular";
   padding: 0;
   margin: 0;
-  background-color: #e1fffa;
+  background-color: var(--blue);
   letter-spacing: 0.2vw;
   font-size: 1vw;
 }
@@ -28,12 +40,12 @@ body {
 #topHeader {
   grid-column: 1/6;
   grid-row: 1/2;
-  background-color: black;
+  background-color: var(--black);
 }
 
 #middleHeader {
   display: flex;
-  background-color: #c4c4c4;
+  background-color: var(--grey);
   grid-column: 1/6;
 }
 
@@ -54,7 +66,7 @@ body {
   mix-blend-mode: normal;
   box-shadow: 0vw 0.26vw 0.26vw rgba(0, 0, 0, 0.5);
   border-radius: 2vw;
-  color: #d82f2e;
+  color: var(--red);
   cursor: pointer;
   letter-spacing: 0.2vw;
   width: 100%;
@@ -66,7 +78,7 @@ body {
 .toggleMode {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
-  color: #d82f2e;
+  color: var(--red);
   font-size: 3.5vw;
   align-items: center;
 }
@@ -77,12 +89,12 @@ body {
 }
 
 #bottomHeader {
-  background-color: #d82f2e;
+  background-color: var(--red);
   grid-column: 1/6;
   font-style: italic;
   font-weight: 550;
   letter-spacing: 0.2vw;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,6 +108,7 @@ body {
   position: absolute;
   right: 1vw;
 }
+
 #reviews {
   grid-column: 1/4;
 }
@@ -106,28 +119,30 @@ body {
 }
 
 a:visited#aboutButton {
-  color: #e1fffa;
+  color: var(--blue);
   text-decoration: none;
 }
 
 a:link#aboutButton {
-  color: #e1fffa;
+  color: var(--blue);
   text-decoration: none;
 }
 
 a:hover#aboutButton {
-  color: #e1fffa;
+  color: var(--blue);
   text-decoration: none;
 }
 
 a:active#aboutButton {
-  color: #e1fffa;
+  color: var(--blue);
   text-decoration: none;
 }
 
 #likeCounter {
   text-align: center;
-  border: solid 5px black;
+  border: solid 0.26vw var(--teal);
+  border-right: none;
+  border-top: none;
   grid-column: 4/6;
   font-family: "Lucida Sans";
   font-style: normal;
@@ -146,7 +161,7 @@ a:active#aboutButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #c4c4c4;
+  background: var(--grey);
   border: 0.15vw solid #000000;
   box-sizing: border-box;
   box-shadow: 0vw 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
@@ -156,7 +171,7 @@ a:active#aboutButton {
   font-size: 6.5vw;
   line-height: 7.7vw;
   letter-spacing: 0.1vw;
-  color: #209e1e;
+  color: var(--black);
   text-shadow: 0vw 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
 }
 
@@ -182,7 +197,7 @@ a:active#aboutButton {
   font-weight: normal;
   font-size: 4vw;
   line-height: 4.5vw;
-  color: #d82f2e;
+  color: var(--red);
   text-shadow: 0vw 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
 }
 
@@ -199,7 +214,7 @@ a:active#aboutButton {
   line-height: 2.7vw;
   letter-spacing: 0.105em;
   color: #000000;
-  background: #d82f2e;
+  background: var(--red);
   border: 0.07vw solid #000000;
   box-sizing: border-box;
   box-shadow: 0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.25),
@@ -209,7 +224,9 @@ a:active#aboutButton {
 
 #feedback {
   grid-column: 4/6;
-  border: solid 5px black;
+  border: solid 0.26vw var(--teal);
+  border-bottom: none;
+  border-right: none;
   text-align: center;
 }
 
@@ -220,8 +237,8 @@ a:active#aboutButton {
 
 img.customer-service {
   width: 60%;
-  border-top: 1.8vw solid #d82f2e;
-  border-bottom: 1.8vw solid #d82f2e;
+  border-top: 1.8vw solid var(--red);
+  border-bottom: 1.8vw solid var(--red);
   border-right: 1vw solid rgba(0, 0, 0, 0.9);
   border-left: 1vw solid rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
@@ -246,7 +263,7 @@ img.customer-service {
   display: flex;
   justify-content: space-around;
   font-size: 3vw;
-  color: #d82f2e;
+  color: var(--red);
 }
 
 .buttonTitle {
@@ -256,14 +273,17 @@ img.customer-service {
 
 #reviews {
   display: flex;
-  border: solid 5px black;
+  border: solid 0.26vw var(--teal);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
   grid-row: 4/6;
   align-items: center;
 }
 
 .prev-btn,
 .next-btn {
-  color: #e5625e;
+  color: var(--light-red);
   font-size: 1.25vw;
   background: transparent;
   border-color: transparent;
@@ -275,31 +295,29 @@ img.customer-service {
 }
 .prev-btn:hover,
 .next-btn:hover {
-  color: #d82f2e;
+  color: var(--red);
 }
 .random-btn {
   margin-top: 0.5vw;
   background: #e5625e;
-  color: #f5dddd;
+  color: var(--off-white);
   padding: 0.25vw 0.5vw;
   text-transform: capitalize;
   border-radius: 1vw;
   transition: all 0.3s linear;
-  border-color: black;
+  border-color: var(--black);
   cursor: pointer;
   font-size: 1vw;
 }
 .random-btn:hover {
-  background: black;
-  color: #f5dddd;
+  background: var(--black);
+  color: var(--off-white);
   border-color: red;
   font-size: 1.1vw;
 }
 main {
-  max-height: 40vw;
   display: grid;
   place-items: center;
-  overflow: hidden;
 }
 .title {
   text-align: center;
@@ -314,14 +332,8 @@ main {
 
 .review {
   padding: 1.4vw 2vw;
-  max-height: 40vw;
-  border-radius: var(--radius);
-  box-shadow: 0 0.26vw 0.8vw rgba(0, 0, 0, 0.1);
-  transition: all 0.3s linear;
+  border-radius: 0.25vw;
   text-align: center;
-}
-.review:hover {
-  box-shadow: 0 0.26vw 0.8vw rgba(0, 0, 0, 0.2);
 }
 
 .img-container {
@@ -353,13 +365,13 @@ main {
   border-radius: 50%;
   transform: translateY(25%);
   background: red;
-  color: #f5dddd;
+  color: var(--off-white);
 }
 .img-container::before {
   content: "";
   width: 100%;
   height: 100%;
-  background: #f5dddd;
+  background: var(--light-red);
   position: absolute;
   top: -0.25vw;
   right: -0.5vw;
@@ -382,10 +394,10 @@ main {
 }
 
 .container {
-  background-color: #0f0f0f;
-  color: #f5dddd;
+  background-color: var(--grey);
+  color: var(--black);
   margin: auto;
-  border: 5px solid #e5625e;
+  border: 5px solid var(--light-red);
   width: 40vw;
   max-height: 40vw;
   border-radius: 2vw;

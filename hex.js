@@ -20,7 +20,13 @@ toggle.addEventListener("click", function () {
 });
 
 toggleOff.addEventListener("click", function () {
+  root.style.setProperty("--grey", "#c4c4c4");
+  root.style.setProperty("--black", "black");
   root.style.setProperty("--blue", "#e1fffa");
+  root.style.setProperty("--light-red", "#e5625e");
+  root.style.setProperty("--red", "#d82f2e");
+  root.style.setProperty("--off-white", "#f5dddd");
+  root.style.setProperty("--teal", "#1d9c85");
   toggle.style.display = "block";
   toggleOff.style.display = "none";
 });

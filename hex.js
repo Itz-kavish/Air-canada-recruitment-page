@@ -32,15 +32,33 @@ toggleOff.addEventListener("click", function () {
 });
 
 function generateRandomNum() {
-  return Math.floor(Math.random() * hex.length);
+  for (let y = 0; i < 6; i++) {
+    return Math.floor(Math.random() * hex.length);
+  }
 }
 
 button.addEventListener("click", function () {
   let hexColor = "#";
   let hexColor1 = "#";
+  let hexColor2 = "#";
+  let hexColor3 = "#";
+  let hexColor4 = "#";
+  let hexColor5 = "#";
+  let hexColor6 = "#";
   for (i = 0; i < 6; i++) {
     hexColor += hex[generateRandomNum()];
+    hexColor1 += hex[generateRandomNum()];
+    hexColor2 += hex[generateRandomNum()];
+    hexColor3 += hex[generateRandomNum()];
+    hexColor4 += hex[generateRandomNum()];
+    hexColor5 += hex[generateRandomNum()];
+    hexColor6 += hex[generateRandomNum()];
   }
-  console.log(hexColor);
-  document.body.style.backgroundColor = hexColor;
+  root.style.setProperty("--grey", hexColor);
+  root.style.setProperty("--black", hexColor1);
+  root.style.setProperty("--blue", hexColor2);
+  root.style.setProperty("--light-red", hexColor3);
+  root.style.setProperty("--red", hexColor4);
+  root.style.setProperty("--off-white", hexColor5);
+  root.style.setProperty("--teal", hexColor6);
 });

@@ -45,7 +45,7 @@ body {
 
 #middleHeader {
   display: flex;
-  background-color: #c4c4c4;
+  background-color: var(--grey);
   grid-column: 1/6;
 }
 
@@ -82,6 +82,7 @@ body {
 }
 
 .fa-toggle-off {
+  color: var(--black);
   display: none;
   transition: all 1s linear;
   cursor: pointer;
@@ -98,6 +99,26 @@ body {
 .fab {
   font-family: "Font Awesome 5 Brands";
   font-size: 1.75vw;
+}
+
+a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--black);
+  text-decoration: none;
 }
 
 #bottomHeader {
